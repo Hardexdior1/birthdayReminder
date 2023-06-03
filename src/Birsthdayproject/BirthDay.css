@@ -1,0 +1,81 @@
+
+.wrap2{
+    max-width: 720px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: pink;
+    margin-bottom: 40px;
+}
+body{
+    background-color:rgb(172, 167, 162);
+    padding-top: 30px;
+}
+.flex2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* line-height: 2px; */
+}
+@media (max-width:366px) {
+    .wrap2{
+        max-width: none;
+    }
+    .flex2{
+        flex-direction: column;
+    }
+}
+.flex2 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.clear{
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid red;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.clear:hover{
+color: white;
+background-color: red;
+}
+
+.reStore{
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    border: 1px solid green;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    display:block;
+    margin: 0 auto ;
+}
+.reStore:hover{
+color: green;
+background-color: white
+}
+
+.birthdayBtn{
+    margin: 7px;
+    font-weight: bold;
+    border: 1px solid blue;
+    color: white;
+    background-color:blue;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.birthdayBtn:hover{
+    opacity: 0.5;
+}
