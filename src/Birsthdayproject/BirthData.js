@@ -11,7 +11,7 @@ const BirthData=[
     {
         img:img1,
         name:'oluwadamilare',
-        age:20,
+        age:19,
         id:1,
     },
     {
@@ -23,7 +23,7 @@ const BirthData=[
 
         img:images4,
         name:'micheal',
-        age:19,
+        age:20,
         id:3,
     },  {
         img:images2,

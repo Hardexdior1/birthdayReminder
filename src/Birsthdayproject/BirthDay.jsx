@@ -27,24 +27,32 @@ const BirthDay = ({ birthDays }) => {
         
   return (
     <div className="wrap2">
+      
       <h4>birthday reminder</h4>
       <small><b>{'<> coded by oluwadamilare</>'}</b></small>
 
       <h4>{data.length>1?<h4>There are {data.length} birthdays today</h4>:<h4>There is {data.length} birthday today</h4>}</h4>
-      <button onClick={()=>{
+      <button className="birthdayBtn" onClick={()=>{
                     setData(birthDays);
+                    setButtonHolder(true)
 
       }}>All</button>
       <button className="birthdayBtn" onClick={()=>{
       setData(showUnderElevenBirthday);
+      setButtonHolder(true)
+
      }}>under 11 Birthdays</button>
     
     <button className="birthdayBtn" onClick={()=>{
       setData(showFromElevenToNineteen);
+      setButtonHolder(true)
+
      }}>11-19</button>
 
 <button className="birthdayBtn" onClick={()=>{
       setData(showNineteenPlus);
+      setButtonHolder(true)
+
      }}>over 19</button>
 
       {data.map((eachBirthDay) => {
@@ -61,7 +69,7 @@ const BirthDay = ({ birthDays }) => {
        
             <div className="flex2">
               <div className="img">
-                <img src={img} alt="image" />
+                <img src={img} alt={name+' img'} />
                
               </div>
 
